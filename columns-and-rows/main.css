@@ -8,6 +8,10 @@ body {
     grid-template-rows: 300px 150px; */
     /* grid-template: rows / columns; */
     grid-template: 300px 150px / 25% 500px 25%;
+    /* grid-column-gap: 30px;
+    grid-row-gap: 10px; */
+    /* grid-gap: 10px 30px; */
+    gap: 10px 30px;
 }
 
 .item {
