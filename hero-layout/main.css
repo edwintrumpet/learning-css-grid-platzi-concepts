@@ -1,0 +1,26 @@
+.container {
+    display: grid;
+    grid-template: 4fr 1fr 1fr / 6fr 4fr 3fr 3fr;
+    height: 100vh;
+    gap: 5px;
+}
+
+.item {
+    background-color: #55ACEE;
+}
+
+.item:nth-of-type(1) {
+    grid-column: 1 / span 4;
+}
+
+.item:nth-of-type(2) {
+    grid-row: 2 / span 2;
+}
+
+.item:nth-of-type(3) {
+    grid-row: 2 / span 2;
+}
+
+.item:nth-of-type(4) {
+    grid-column: 3 / span 2;
+}
