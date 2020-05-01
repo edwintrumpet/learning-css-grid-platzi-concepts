@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template: 4fr 1fr 1fr / 6fr 4fr 3fr 3fr;
+    grid-template: 4fr [middle] 1fr 1fr [row-end] / [column-start] 6fr 4fr [division] 3fr 3fr [column-end];
     height: 100vh;
     gap: 5px;
 }
@@ -10,17 +10,17 @@
 }
 
 .item:nth-of-type(1) {
-    grid-column: 1 / span 4;
+    grid-column: column-start / column-end;
 }
 
 .item:nth-of-type(2) {
-    grid-row: 2 / span 2;
+    grid-row: middle / row-end;
 }
 
 .item:nth-of-type(3) {
-    grid-row: 2 / span 2;
+    grid-row: middle / row-end;
 }
 
 .item:nth-of-type(4) {
-    grid-column: 3 / span 2;
+    grid-column: division / column-end;
 }
